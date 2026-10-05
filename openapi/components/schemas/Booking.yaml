@@ -1,0 +1,33 @@
+type: object
+required: [id, name, phone, email, session_type, session_date, comment, notes, created_at, viewed_at, deleted_at]
+properties:
+  id:
+    type: string
+    format: uuid
+  name:
+    type: string
+  phone:
+    type: string
+  email:
+    type: string
+    format: email
+  session_type:
+    type: string
+  session_date:
+    type: string
+    format: date
+  comment:
+    type: string
+  notes:
+    type: array
+    items:
+      type: string
+  created_at:
+    type: integer
+    format: int64
+  viewed_at:
+    type: integer
+    format: int64
+  deleted_at:
+    type: integer
+    format: int64

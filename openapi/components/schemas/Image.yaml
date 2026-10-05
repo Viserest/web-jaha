@@ -1,0 +1,18 @@
+type: object
+required: [id, album_id, created_at, viewed_at, deleted_at]
+properties:
+  id:
+    type: string
+    format: uuid
+  album_id:
+    type: string
+    format: uuid
+  created_at:
+    type: integer
+    format: int64
+  viewed_at:
+    type: integer
+    format: int64
+  deleted_at:
+    type: integer
+    format: int64

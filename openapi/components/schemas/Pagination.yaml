@@ -1,0 +1,15 @@
+type: object
+required: [total, limit, offset, items]
+properties:
+  total:
+    type: integer
+    minimum: 0
+  limit:
+    type: integer
+    minimum: 0
+  offset:
+    type: integer
+    minimum: 0
+  items:
+    type: array
+    items: {}

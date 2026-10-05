@@ -1,0 +1,34 @@
+openapi: 3.0.3
+info:
+  title: Jaha API
+  version: 1.0.0
+
+paths:
+  /api/admin:
+    $ref: "./paths/admin.yaml"
+  /api/session:
+    $ref: "./paths/session.yaml"
+  /api/booking:
+    $ref: "./paths/booking.yaml"
+  /api/album:
+    $ref: "./paths/album.yaml"
+  /api/image:
+    $ref: "./paths/image.yaml"
+
+components:
+  securitySchemes:
+    sessionCookie:
+      $ref: "./components/securitySchemes/sessionCookie.yaml"
+  schemas:
+    Pagination:
+      $ref: "./components/schemas/Pagination.yaml"
+    Admin:
+      $ref: "./components/schemas/Admin.yaml"
+    Session:
+      $ref: "./components/schemas/Session.yaml"
+    Booking:
+      $ref: "./components/schemas/Booking.yaml"
+    Album:
+      $ref: "./components/schemas/Album.yaml"
+    Image:
+      $ref: "./components/schemas/Image.yaml"

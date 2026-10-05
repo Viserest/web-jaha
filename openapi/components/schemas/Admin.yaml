@@ -1,0 +1,21 @@
+type: object
+required: [id, username, password, sessions, role, created_at]
+properties:
+  id:
+    type: string
+    format: uuid
+  username:
+    type: string
+  password:
+    type: string
+    format: password
+  sessions:
+    type: array
+    items:
+      type: string
+      format: uuid
+  role:
+    type: string
+  created_at:
+    type: integer
+    format: int64

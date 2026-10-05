@@ -1,0 +1,46 @@
+
+.navbar {
+	text-align: center;
+	padding: 20px;
+	border-bottom: 1px solid #804040;
+}
+.navbar h1 {
+	display: inline;
+	margin: 0;
+	font-family: "Dancing Script", cursive;
+	font-size: 6em;
+}
+.navbar a {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+.navbar a:hover {
+	color: steelblue;
+}
+.navbar * {
+	vertical-align: middle;
+	padding: 20px;
+}
+
+#entry_wrapper {
+	padding: 20px;
+	background: linear-gradient(143deg, rgba(36,200,240,1) 0%, rgba(8,94,114,1) 100%);
+}
+
+#contact_form {
+	padding: 20px;
+	border-radius: 5px;
+	background: white;
+}
+
+.footer {
+	text-align: center;
+	padding: 20px;
+	border-top: 1px solid #804040;
+}
+
+.footer h3 {
+	font-family: "Dancing Script", cursive;
+	font-size: 3.5em;
+}

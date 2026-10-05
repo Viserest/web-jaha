@@ -1,0 +1,22 @@
+type: object
+required: [id, name, image_ids, created_at, viewed_at, deleted_at]
+properties:
+  id:
+      type: string
+      format: uuid
+  name:
+    type: string
+  image_ids:
+    type: array
+    items:
+      type: string
+      format: uuid
+  created_at:
+    type: integer
+    format: int64
+  viewed_at:
+    type: integer
+    format: int64
+  deleted_at:
+    type: integer
+    format: int64

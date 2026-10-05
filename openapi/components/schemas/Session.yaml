@@ -1,0 +1,15 @@
+type: object
+required: [id, admin_id, created_at, expires_at]
+properties:
+  id:
+    type: string
+    format: uuid
+  admin_id:
+    type: string
+    format: uuid
+  created_at:
+    type: integer
+    format: int64
+  expires_at:
+    type: integer
+    format: int64

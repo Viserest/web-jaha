@@ -1,0 +1,17 @@
+type: object
+required: [name, phone, email, session_type, session_date, comment]
+properties:
+  name:
+    type: string
+  phone:
+    type: string
+  email:
+    type: string
+    format: email
+  session_type:
+    type: string
+  session_date:
+    type: string
+    format: date
+  comment:
+    type: string

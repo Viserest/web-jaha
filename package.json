@@ -1,14 +1,27 @@
 {
-  "name": "jaha-web",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "web-jaha",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest",
+    "cf-typegen": "wrangler types",
+    "openapi-gen": "node src/utils/gen.ts",
+    "add_user": "node src/utils/add_user.ts"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.0.0",
+    "@types/node": "^22.20.3",
+    "typescript": "^5.5.2",
+    "vitest": "~4.1.0",
+    "wrangler": "^4.133.0"
+  },
   "dependencies": {
-    "wrangler": "^3.71.0"
+    "@cloudflare/vitest-pool-workers": "^0.8.30",
+    "bcryptjs": "^3.0.3",
+    "itty-router": "^5.0.24"
   }
 }

@@ -1,0 +1,28 @@
+import {
+    Configuration,
+    ConfigurationParameters,
+} from "../runtime{{importFileExtension}}";
+
+{{#apiInfo}}
+{{#apis}}
+import {
+    {{classFilename}},
+} from "./{{classFilename}}{{importFileExtension}}";
+{{/apis}}
+{{/apiInfo}}
+
+export class Api {
+{{#apiInfo}}
+{{#apis}}
+    public static {{#lambda.camelcase}}{{classFilename}}{{/lambda.camelcase}}: {{classFilename}};
+{{/apis}}
+{{/apiInfo}}
+
+    public static init(apiBaseConfig: ConfigurationParameters) {
+{{#apiInfo}}
+{{#apis}}
+        Api.{{#lambda.camelcase}}{{classFilename}}{{/lambda.camelcase}} = new {{classFilename}}(new Configuration(apiBaseConfig));
+{{/apis}}
+{{/apiInfo}}
+    }
+}
